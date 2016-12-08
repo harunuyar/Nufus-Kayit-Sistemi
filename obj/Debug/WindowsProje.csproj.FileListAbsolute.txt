@@ -1,0 +1,42 @@
+C:\Users\Naim YÜREK\Documents\Visual Studio 2015\Projects\WindowsProje\bin\Debug\WindowsProje.exe.config
+\\DESKTOP-KPO4AKH\Users\Naim YÜREK\Documents\Visual Studio 2015\Projects\WindowsProje\bin\Debug\WindowsProje.exe.config
+C:\Users\Naim YÜREK\Documents\Visual Studio 2015\Projects\WindowsProje\bin\Debug\WindowsProje.exe
+C:\Users\Naim YÜREK\Documents\Visual Studio 2015\Projects\WindowsProje\bin\Debug\WindowsProje.pdb
+C:\Users\Naim YÜREK\Documents\Visual Studio 2015\Projects\WindowsProje\obj\Debug\WindowsProje.csprojResolveAssemblyReference.cache
+C:\Users\Naim YÜREK\Documents\Visual Studio 2015\Projects\WindowsProje\obj\Debug\WindowsProje.Properties.Resources.resources
+C:\Users\Naim YÜREK\Documents\Visual Studio 2015\Projects\WindowsProje\obj\Debug\WindowsProje.csproj.GenerateResource.Cache
+C:\Users\Naim YÜREK\Documents\Visual Studio 2015\Projects\WindowsProje\obj\Debug\WindowsProje.exe
+C:\Users\Naim YÜREK\Documents\Visual Studio 2015\Projects\WindowsProje\obj\Debug\WindowsProje.pdb
+C:\Users\Naim YÜREK\Documents\Visual Studio 2015\Projects\WindowsProje\obj\Debug\WindowsProje.Giriş.resources
+C:\Users\Naim YÜREK\Documents\Visual Studio 2015\Projects\WindowsProje\obj\Debug\WindowsProje.KullanıcıPaneli.resources
+\\DESKTOP-KPO4AKH\Users\Naim YÜREK\Documents\Visual Studio 2015\Projects\WindowsProje\obj\Debug\WindowsProje.exe
+\\DESKTOP-KPO4AKH\Users\Naim YÜREK\Documents\Visual Studio 2015\Projects\WindowsProje\obj\Debug\WindowsProje.pdb
+C:\Users\Naim YÜREK\Documents\Visual Studio 2015\Projects\WindowsProje\obj\Debug\WindowsProje.AdminPanel.resources
+C:\Users\Harun\Desktop\WindowsProje\bin\Debug\WindowsProje.exe.config
+C:\Users\Harun\Desktop\WindowsProje\obj\Debug\WindowsProje.exe
+C:\Users\Harun\Desktop\WindowsProje\obj\Debug\WindowsProje.pdb
+C:\Users\Harun\Desktop\WindowsProje\obj\Debug\WindowsProje.csprojResolveAssemblyReference.cache
+C:\Users\Harun\Desktop\WindowsProje\obj\Debug\WindowsProje.Giriş.resources
+C:\Users\Harun\Desktop\WindowsProje\obj\Debug\WindowsProje.KullanıcıPaneli.resources
+C:\Users\Harun\Desktop\WindowsProje\obj\Debug\WindowsProje.csproj.GenerateResource.Cache
+C:\Users\Harun\Desktop\WindowsProje\bin\Debug\WindowsProje.exe
+C:\Users\Harun\Desktop\WindowsProje\bin\Debug\WindowsProje.pdb
+C:\Users\Harun\Desktop\WindowsProje\obj\Debug\WindowsProje.Properties.Resources.resources
+C:\Users\Harun\Desktop\WindowsProje\obj\Debug\WindowsProje.AdminPaneli.resources
+C:\Users\Harun\Desktop\WindowsProje\bin\Debug\MySql.Data.dll
+C:\Users\Harun\Desktop\WindowsProje\bin\Debug\MySql.Data.xml
+C:\Users\Harun\Desktop\WindowsProje\obj\Debug\WindowsProje.NüfusKayıtÖrneği.resources
+C:\Users\Harun\Desktop\Windows-Programlama\bin\Debug\WindowsProje.exe.config
+C:\Users\Harun\Desktop\Windows-Programlama\obj\Debug\WindowsProje.exe
+C:\Users\Harun\Desktop\Windows-Programlama\obj\Debug\WindowsProje.pdb
+C:\Users\Harun\Desktop\Windows-Programlama\bin\Debug\WindowsProje.exe
+C:\Users\Harun\Desktop\Windows-Programlama\bin\Debug\WindowsProje.pdb
+C:\Users\Harun\Desktop\Windows-Programlama\bin\Debug\MySql.Data.dll
+C:\Users\Harun\Desktop\Windows-Programlama\bin\Debug\MySql.Data.xml
+C:\Users\Harun\Desktop\Windows-Programlama\obj\Debug\WindowsProje.csprojResolveAssemblyReference.cache
+C:\Users\Harun\Desktop\Windows-Programlama\obj\Debug\WindowsProje.AdminPaneli.resources
+C:\Users\Harun\Desktop\Windows-Programlama\obj\Debug\WindowsProje.Giriş.resources
+C:\Users\Harun\Desktop\Windows-Programlama\obj\Debug\WindowsProje.KullanıcıPaneli.resources
+C:\Users\Harun\Desktop\Windows-Programlama\obj\Debug\WindowsProje.NüfusKayıtÖrneği.resources
+C:\Users\Harun\Desktop\Windows-Programlama\obj\Debug\WindowsProje.Properties.Resources.resources
+C:\Users\Harun\Desktop\Windows-Programlama\obj\Debug\WindowsProje.csproj.GenerateResource.Cache
