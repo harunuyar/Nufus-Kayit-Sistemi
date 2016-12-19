@@ -11,14 +11,11 @@ using System.Windows.Forms;
 
 namespace WindowsProje
 {
-    public partial class KullanıcıPaneli : Form
+    public partial class KullanıcıPaneli : WindowsProjeBase.PanelBase
     {
-        Form senderForm;
-
-        public KullanıcıPaneli(Form form)
+        public KullanıcıPaneli(Form form) : base(form)
         {
             InitializeComponent();
-            this.senderForm = form;
         }
 
         private void buttonAra_Click(object sender, EventArgs e)
@@ -84,43 +81,6 @@ namespace WindowsProje
             {
                 txtAd.Enabled = false;
                 txtSoyad.Enabled = false;
-            }
-        }
-
-        private void oturumuKapatToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            if (MessageBox.Show("Oturumunuzu kapatmak istiyor musunuz?", "Oturumu Kapat", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
-                this.Close();
-        }
-
-        private void çıkışToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            if (MessageBox.Show("Programı kapatmak istiyor musunuz?", "Çıkış", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
-                Application.Exit();
-        }
-
-        private void hakkındaToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Giriş.hakkında();
-        }
-
-        private void yardımToolStripMenuItem1_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show("Bilgiler...\n...\n...\n...", "Yardım");
-        }
-        
-        private void kullanıcıPaneli_FormClosed(object sender, FormClosedEventArgs e)
-        {
-            senderForm.Show();
-        }
-
-        private void buttonNKÖrneği_Click(object sender, EventArgs e)
-        {
-            if (listView.SelectedItems.Count > 0)
-            {
-                NüfusKayıtÖrneği nkö = new NüfusKayıtÖrneği(this,listView.SelectedItems[0].SubItems[0].Text);
-                this.Enabled = false;
-                nkö.Show();
             }
         }
     }

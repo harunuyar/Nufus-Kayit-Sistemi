@@ -11,9 +11,8 @@ using System.Windows.Forms;
 
 namespace WindowsProje
 {
-    public partial class AdminPaneli : Form
+    public partial class AdminPaneli : WindowsProjeBase.PanelBase
     {
-        private Form form;
 
         List<Control> vatandaşTextList;
 
@@ -21,18 +20,12 @@ namespace WindowsProje
                                         "medeniHali","dini","kanGrubu","koil","koilce","kokoy","cilt","aileSira","sira"};
         public static string[] kullanıcıColumns = {"id", "kullaniciAdi", "parola", "isAdmin"};
        
-        public AdminPaneli(Form form)
+        public AdminPaneli(Form form) : base(form)
         {
-            this.form = form;
             InitializeComponent();
             initVadandaşList();
             listViewPeople_SelectedIndexChanged(new object(), new EventArgs());
             userTexts_TextChanged(new object(), new EventArgs());
-        }
-
-        private void AdminPanel_FormClosed(object sender, FormClosedEventArgs e)
-        {
-            form.Show();
         }
 
         private bool IsNumeric(string text)
@@ -469,32 +462,6 @@ namespace WindowsProje
             {
                 MessageBox.Show("Kayıt bulunamadı", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-        }
-
-
-
-        // Menu Strip
-
-        private void oturumuKapatToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            if (MessageBox.Show("Oturumunuzu kapatmak istiyor musunuz?", "Oturumu Kapat", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
-                this.Close();
-        }
-
-        private void çıkışToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            if (MessageBox.Show("Programı kapatmak istiyor musunuz?","Çıkış",MessageBoxButtons.YesNo,MessageBoxIcon.Question) == DialogResult.Yes)
-                Application.Exit();
-        }
-
-        private void hakkındaToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Giriş.hakkında();
-        }
-
-        private void yardımToolStripMenuItem1_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show("Bilgiler...\n...\n...\n...","Yardım");
         }
     }
 }
