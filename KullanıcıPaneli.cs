@@ -13,9 +13,12 @@ namespace WindowsProje
 {
     public partial class KullanıcıPaneli : WindowsProjeBase.PanelBase
     {
+        private VatandaşForm vatandaşForm;
+
         public KullanıcıPaneli(Form form) : base(form)
         {
             InitializeComponent();
+            vatandaşForm = null;
         }
 
         private void buttonAra_Click(object sender, EventArgs e)
@@ -88,6 +91,15 @@ namespace WindowsProje
             {
                 txtAd.Enabled = false;
                 txtSoyad.Enabled = false;
+            }
+        }
+
+        private void listView_DoubleClick(object sender, EventArgs e)
+        {
+            if (listView.SelectedItems.Count > 0) {
+                Vatandaş v = new Vatandaş(listView.SelectedItems[0]);
+                vatandaşForm = VatandaşForm.getForm();
+                vatandaşForm.openChild(v);
             }
         }
     }

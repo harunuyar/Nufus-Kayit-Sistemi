@@ -75,7 +75,9 @@ namespace WindowsProjeBase
 
         protected void hakkında(object sender, EventArgs e)
         {
-            MessageBox.Show("Hakkında", "Hakkında");
+            MessageBox.Show("Hakkında", "Harun Uyar\n" +
+                                        "Naim Yürek\n" +
+                                        "Sedat Girgin");
         }
 
         protected void setFoundRecords(int value)

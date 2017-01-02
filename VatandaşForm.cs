@@ -22,13 +22,22 @@ namespace WindowsProje
         public static VatandaşForm getForm()
         {
             if (form == null)
+            {
                 form = new VatandaşForm();
+                form.Show();
+            }
             return form;
         }
 
-        public void openWindow(Vatandaş vatandaş)
+        public void openChild(Vatandaş vatandaş)
         {
+            vatandaş.MdiParent = this;
+            vatandaş.Show();
+        }
 
+        private void VatandaşForm_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            form = null;
         }
     }
 }

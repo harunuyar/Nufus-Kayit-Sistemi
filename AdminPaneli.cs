@@ -88,7 +88,7 @@ namespace WindowsProje
                 }
                 else
                 {
-                    if (vatandaşTextList.IndexOf(con) != 9 && vatandaşTextList.IndexOf(con) != 10 && vatandaşTextList.IndexOf(con) != 3 && vatandaşTextList.IndexOf(con) != 4) // Kan grubu ve din NULL olabilir
+                    if (vatandaşTextList.IndexOf(con) != 9 && vatandaşTextList.IndexOf(con) != 10) // Kan grubu ve din NULL olabilir
                     {
                         ekleAktif = false;
                         break;

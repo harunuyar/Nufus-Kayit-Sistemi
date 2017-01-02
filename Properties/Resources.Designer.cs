@@ -73,6 +73,26 @@ namespace WindowsProje.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap nufuscuzdanierkek {
+            get {
+                object obj = ResourceManager.GetObject("nufuscuzdanierkek", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap nufuscuzdanikadin {
+            get {
+                object obj = ResourceManager.GetObject("nufuscuzdanikadin", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap turkbayrak {
             get {
                 object obj = ResourceManager.GetObject("turkbayrak", resourceCulture);

@@ -276,12 +276,12 @@
             // 
             // columnBabaAdi
             // 
-            this.columnBabaAdi.Text = "Baba TC";
+            this.columnBabaAdi.Text = "Baba Adı";
             this.columnBabaAdi.Width = 82;
             // 
             // columnAnneAdi
             // 
-            this.columnAnneAdi.Text = "Anne TC";
+            this.columnAnneAdi.Text = "Anne Adı";
             this.columnAnneAdi.Width = 82;
             // 
             // columnCinsiyet
@@ -590,20 +590,20 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(70, 113);
+            this.label5.Location = new System.Drawing.Point(65, 113);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(57, 13);
+            this.label5.Size = new System.Drawing.Size(61, 13);
             this.label5.TabIndex = 30;
-            this.label5.Text = "ANNE TC:";
+            this.label5.Text = "ANNE ADI:";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(71, 87);
+            this.label4.Location = new System.Drawing.Point(67, 87);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(55, 13);
+            this.label4.Size = new System.Drawing.Size(59, 13);
             this.label4.TabIndex = 29;
-            this.label4.Text = "BABA TC:";
+            this.label4.Text = "BABA ADI:";
             // 
             // label3
             // 
@@ -720,7 +720,7 @@
             this.tabKulllanici.Location = new System.Drawing.Point(4, 22);
             this.tabKulllanici.Name = "tabKulllanici";
             this.tabKulllanici.Padding = new System.Windows.Forms.Padding(3);
-            this.tabKulllanici.Size = new System.Drawing.Size(793, 438);
+            this.tabKulllanici.Size = new System.Drawing.Size(793, 457);
             this.tabKulllanici.TabIndex = 5;
             this.tabKulllanici.Text = "KULLANICI İŞLEMLERİ";
             this.tabKulllanici.UseVisualStyleBackColor = true;

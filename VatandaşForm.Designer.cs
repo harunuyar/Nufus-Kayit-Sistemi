@@ -38,6 +38,7 @@
             this.IsMdiContainer = true;
             this.Name = "VatandaşForm";
             this.Text = "VatandaşForm";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.VatandaşForm_FormClosed);
             this.ResumeLayout(false);
 
         }
