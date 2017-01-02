@@ -165,7 +165,7 @@
             this.tabVatandas.Location = new System.Drawing.Point(4, 22);
             this.tabVatandas.Name = "tabVatandas";
             this.tabVatandas.Padding = new System.Windows.Forms.Padding(3);
-            this.tabVatandas.Size = new System.Drawing.Size(793, 438);
+            this.tabVatandas.Size = new System.Drawing.Size(793, 457);
             this.tabVatandas.TabIndex = 6;
             this.tabVatandas.Text = "VATANDAŞ İŞLEMLERİ";
             this.tabVatandas.UseVisualStyleBackColor = true;
@@ -203,7 +203,7 @@
             this.panel1.Controls.Add(this.buttonAra);
             this.panel1.Location = new System.Drawing.Point(325, 32);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(465, 403);
+            this.panel1.Size = new System.Drawing.Size(465, 422);
             this.panel1.TabIndex = 51;
             // 
             // buttonTümünüListele1
@@ -252,7 +252,7 @@
             this.listViewPeople.Location = new System.Drawing.Point(91, 3);
             this.listViewPeople.Name = "listViewPeople";
             this.listViewPeople.RightToLeftLayout = true;
-            this.listViewPeople.Size = new System.Drawing.Size(367, 393);
+            this.listViewPeople.Size = new System.Drawing.Size(367, 412);
             this.listViewPeople.Sorting = System.Windows.Forms.SortOrder.Ascending;
             this.listViewPeople.TabIndex = 24;
             this.listViewPeople.UseCompatibleStateImageBehavior = false;
@@ -720,7 +720,7 @@
             this.tabKulllanici.Location = new System.Drawing.Point(4, 22);
             this.tabKulllanici.Name = "tabKulllanici";
             this.tabKulllanici.Padding = new System.Windows.Forms.Padding(3);
-            this.tabKulllanici.Size = new System.Drawing.Size(793, 453);
+            this.tabKulllanici.Size = new System.Drawing.Size(793, 438);
             this.tabKulllanici.TabIndex = 5;
             this.tabKulllanici.Text = "KULLANICI İŞLEMLERİ";
             this.tabKulllanici.UseVisualStyleBackColor = true;
@@ -943,16 +943,16 @@
             this.tabControlKulEkle.Location = new System.Drawing.Point(12, 33);
             this.tabControlKulEkle.Name = "tabControlKulEkle";
             this.tabControlKulEkle.SelectedIndex = 0;
-            this.tabControlKulEkle.Size = new System.Drawing.Size(801, 464);
+            this.tabControlKulEkle.Size = new System.Drawing.Size(801, 483);
             this.tabControlKulEkle.TabIndex = 25;
             // 
             // AdminPaneli
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(825, 524);
+            this.ClientSize = new System.Drawing.Size(825, 543);
             this.Controls.Add(this.tabControlKulEkle);
-            this.MinimumSize = new System.Drawing.Size(813, 563);
+            this.MinimumSize = new System.Drawing.Size(841, 582);
             this.Name = "AdminPaneli";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AdminPanel";

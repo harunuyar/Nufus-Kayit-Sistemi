@@ -123,7 +123,7 @@
             this.listView.Location = new System.Drawing.Point(12, 69);
             this.listView.Name = "listView";
             this.listView.RightToLeftLayout = true;
-            this.listView.Size = new System.Drawing.Size(626, 210);
+            this.listView.Size = new System.Drawing.Size(626, 218);
             this.listView.Sorting = System.Windows.Forms.SortOrder.Ascending;
             this.listView.TabIndex = 5;
             this.listView.UseCompatibleStateImageBehavior = false;
@@ -237,7 +237,7 @@
             this.AcceptButton = this.buttonAra;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(650, 306);
+            this.ClientSize = new System.Drawing.Size(650, 314);
             this.Controls.Add(this.buttonAra);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.listView);
