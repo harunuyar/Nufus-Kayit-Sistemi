@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{B28FB9ED-BEFC-4F65-B4C2-94B9506DA9FE}</ProjectGuid>
-    <OutputType>WinExe</OutputType>
+    <ProjectGuid>{433737B4-E878-4DE1-9646-CC65A4F031C9}</ProjectGuid>
+    <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>WindowsProje</RootNamespace>
-    <AssemblyName>WindowsProje</AssemblyName>
+    <RootNamespace>WindowsProjeBase</RootNamespace>
+    <AssemblyName>WindowsProjeBase</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -32,8 +32,10 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
   <ItemGroup>
-    <Reference Include="MySql.Data, Version=6.9.9.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -45,42 +47,18 @@
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
-    <Reference Include="WindowsProjeBase, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>WindowsProjeBase\bin\Debug\WindowsProjeBase.dll</HintPath>
-    </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AdminPaneli.cs">
+    <Compile Include="PanelBase.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AdminPaneli.Designer.cs">
-      <DependentUpon>AdminPaneli.cs</DependentUpon>
+    <Compile Include="PanelBase.Designer.cs">
+      <DependentUpon>PanelBase.cs</DependentUpon>
     </Compile>
-    <Compile Include="Giriş.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Giriş.Designer.cs">
-      <DependentUpon>Giriş.cs</DependentUpon>
-    </Compile>
-    <Compile Include="KullanıcıPaneli.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="KullanıcıPaneli.Designer.cs">
-      <DependentUpon>KullanıcıPaneli.cs</DependentUpon>
-    </Compile>
-    <Compile Include="MySQLHelper.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="MSSQLHelper.cs" />
-    <EmbeddedResource Include="AdminPaneli.resx">
-      <DependentUpon>AdminPaneli.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Giriş.resx">
-      <DependentUpon>Giriş.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="KullanıcıPaneli.resx">
-      <DependentUpon>KullanıcıPaneli.cs</DependentUpon>
+    <EmbeddedResource Include="PanelBase.resx">
+      <DependentUpon>PanelBase.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -90,7 +68,6 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -104,12 +81,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="harita.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="turkbayrak.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
