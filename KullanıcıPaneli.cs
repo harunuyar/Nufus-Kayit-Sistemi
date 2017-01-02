@@ -20,6 +20,8 @@ namespace WindowsProje
 
         private void buttonAra_Click(object sender, EventArgs e)
         {
+            setProgressBarValue(0);
+
             string komutString;
 
             if (txtTc.Text != "")
@@ -40,16 +42,21 @@ namespace WindowsProje
                 return;
             }
 
+            setProgressBarValue(40);
+
             if (MySQLHelper.select(komutString, listView).Items.Count == 0)
             {
                 MessageBox.Show("Kayıt bulunamadı!", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                setFoundRecords(0);
             }
             else
             {
                 txtAd.Text = "";
                 txtSoyad.Text = "";
                 txtTc.Text = "";
+                setFoundRecords(listView.Items.Count);
             }
+            setProgressBarValue(100);
         }
 
         private bool IsNumeric(string text)

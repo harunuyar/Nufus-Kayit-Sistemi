@@ -34,6 +34,7 @@
             this.çıkışToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.yardımToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.hakkındaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.searchStatus = new WindowsProjeBase.SearchStatus();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -89,11 +90,20 @@
             this.hakkındaToolStripMenuItem.Text = "Hakkında";
             this.hakkındaToolStripMenuItem.Click += new System.EventHandler(this.hakkında);
             // 
+            // searchStatus
+            // 
+            this.searchStatus.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.searchStatus.Location = new System.Drawing.Point(0, 382);
+            this.searchStatus.Name = "searchStatus";
+            this.searchStatus.Size = new System.Drawing.Size(653, 21);
+            this.searchStatus.TabIndex = 10;
+            // 
             // PanelBase
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(653, 403);
+            this.Controls.Add(this.searchStatus);
             this.Controls.Add(this.menuStrip1);
             this.Name = "PanelBase";
             this.Text = "Panel";
@@ -114,6 +124,7 @@
         private System.Windows.Forms.ToolStripMenuItem çıkışToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem yardımToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem hakkındaToolStripMenuItem;
+        private SearchStatus searchStatus;
     }
 }
 

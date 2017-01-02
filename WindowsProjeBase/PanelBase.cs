@@ -77,5 +77,15 @@ namespace WindowsProjeBase
         {
             MessageBox.Show("Hakkında", "Hakkında");
         }
+
+        protected void setFoundRecords(int value)
+        {
+            this.searchStatus.setFoundRecords(value);
+        }
+
+        protected void setProgressBarValue(int value)
+        {
+            this.searchStatus.setProgressBarValue(value);
+        }
     }
 }

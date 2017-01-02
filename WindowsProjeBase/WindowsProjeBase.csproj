@@ -57,6 +57,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SearchStatus.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SearchStatus.Designer.cs">
+      <DependentUpon>SearchStatus.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="PanelBase.resx">
       <DependentUpon>PanelBase.cs</DependentUpon>
     </EmbeddedResource>
@@ -69,6 +75,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="SearchStatus.resx">
+      <DependentUpon>SearchStatus.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

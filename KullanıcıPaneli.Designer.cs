@@ -123,7 +123,7 @@
             this.listView.Location = new System.Drawing.Point(12, 69);
             this.listView.Name = "listView";
             this.listView.RightToLeftLayout = true;
-            this.listView.Size = new System.Drawing.Size(626, 225);
+            this.listView.Size = new System.Drawing.Size(626, 210);
             this.listView.Sorting = System.Windows.Forms.SortOrder.Ascending;
             this.listView.TabIndex = 5;
             this.listView.UseCompatibleStateImageBehavior = false;
