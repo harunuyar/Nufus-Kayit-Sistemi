@@ -159,11 +159,14 @@ namespace WindowsProje
                 con.Text = "";
             }
             listViewPeople.Items.Clear();
+            setFoundRecords(0);
+            setProgressBarValue(0);
         }
         
 
         private void buttonAra_Click(object sender, EventArgs e)
         {
+            setProgressBarValue(0);
             if (t1.Text != "" && (t1.Text.Length != 11 || !IsNumeric(t1.Text)))
             {
                 MessageBox.Show("TC Kimlik Numarasını Yanlış Girdiniz.", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -186,11 +189,20 @@ namespace WindowsProje
                 MessageBox.Show("Bütün girişler boş!", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
-            
+
+            setProgressBarValue(40);
+
             if (MySQLHelper.select("Citizen", colList, valList, listViewPeople).Items.Count == 0)
             {
+                setProgressBarValue(0);
                 MessageBox.Show("Kayıt bulunamadı!", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+            else
+            {
+                setProgressBarValue(100);
+            }
+
+            setFoundRecords(listViewPeople.Items.Count);
         }
 
         private void buttonEkle_Click(object sender, EventArgs e)
@@ -272,10 +284,18 @@ namespace WindowsProje
 
         private void buttonTümünüListele1_Click(object sender, EventArgs e)
         {
+            setProgressBarValue(0);
+            setProgressBarValue(40);
             if (MySQLHelper.select("select * from Citizen", listViewPeople).Items.Count == 0)
             {
+                setProgressBarValue(0);
                 MessageBox.Show("Kayıt bulunamadı", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+            else
+            {
+                setProgressBarValue(100);
+            }
+            setFoundRecords(listViewPeople.Items.Count);
         }
 
         private string adBul(string TC)
@@ -352,12 +372,16 @@ namespace WindowsProje
             tPass.Text = "";
             checkBoxAdmin.Checked = false;
             listViewKullanicilar.Items.Clear();
+
+            setFoundRecords(0);
+            setProgressBarValue(0);
         }
 
         private void buttonAra2_Click(object sender, EventArgs e)
         {
             string komutString;
 
+            setProgressBarValue(0);
             if (tId.Text != "")
             {
                 if (!IsNumeric(tId.Text))
@@ -376,10 +400,17 @@ namespace WindowsProje
                 return;
             }
 
+            setProgressBarValue(40);
             if (MySQLHelper.select(komutString, listViewKullanicilar).Items.Count == 0)
             {
                 MessageBox.Show("Kayıt bulunamadı", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                setProgressBarValue(0);
             }
+            else
+            {
+                setProgressBarValue(100);
+            }
+            setFoundRecords(listViewKullanicilar.Items.Count);
         }
 
         private void buttonEkle2_Click(object sender, EventArgs e)
@@ -458,10 +489,19 @@ namespace WindowsProje
 
         private void buttonTümünüListele2_Click(object sender, EventArgs e)
         {
+            setProgressBarValue(0);
+            setProgressBarValue(40);
+
             if (MySQLHelper.select("select * from User", listViewKullanicilar).Items.Count == 0)
             {
                 MessageBox.Show("Kayıt bulunamadı", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                setProgressBarValue(0);
             }
+            else
+            {
+                setProgressBarValue(100);
+            }
+            setFoundRecords(listViewKullanicilar.Items.Count);
         }
     }
 }

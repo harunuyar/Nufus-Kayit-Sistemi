@@ -1,0 +1,19 @@
+C:\Users\Harun\Desktop\WindowsProjeBase\obj\Debug\WindowsProjeBase.PanelBase.resources
+C:\Users\Harun\Desktop\WindowsProjeBase\obj\Debug\WindowsProjeBase.Properties.Resources.resources
+C:\Users\Harun\Desktop\WindowsProjeBase\obj\Debug\WindowsProjeBase.csproj.GenerateResource.Cache
+C:\Users\Harun\Desktop\WindowsProjeBase\bin\Debug\WindowsProjeBase.pdb
+C:\Users\Harun\Desktop\WindowsProjeBase\obj\Debug\WindowsProjeBase.pdb
+C:\Users\Harun\Desktop\WindowsProjeBase\bin\Debug\WindowsProjeBase.dll.config
+C:\Users\Harun\Desktop\WindowsProjeBase\bin\Debug\WindowsProjeBase.dll
+C:\Users\Harun\Desktop\WindowsProjeBase\obj\Debug\WindowsProjeBase.dll
+C:\Users\Harun\Desktop\WindowsProjeBase\obj\Debug\WindowsProjeBase.csprojResolveAssemblyReference.cache
+C:\Users\Harun\Documents\Visual Studio 2015\Projects\Windows Programlama\WindowsProjeBase\bin\Debug\WindowsProjeBase.dll.config
+C:\Users\Harun\Documents\Visual Studio 2015\Projects\Windows Programlama\WindowsProjeBase\bin\Debug\WindowsProjeBase.dll
+C:\Users\Harun\Documents\Visual Studio 2015\Projects\Windows Programlama\WindowsProjeBase\bin\Debug\WindowsProjeBase.pdb
+C:\Users\Harun\Documents\Visual Studio 2015\Projects\Windows Programlama\WindowsProjeBase\obj\Debug\WindowsProjeBase.csprojResolveAssemblyReference.cache
+C:\Users\Harun\Documents\Visual Studio 2015\Projects\Windows Programlama\WindowsProjeBase\obj\Debug\WindowsProjeBase.PanelBase.resources
+C:\Users\Harun\Documents\Visual Studio 2015\Projects\Windows Programlama\WindowsProjeBase\obj\Debug\WindowsProjeBase.Properties.Resources.resources
+C:\Users\Harun\Documents\Visual Studio 2015\Projects\Windows Programlama\WindowsProjeBase\obj\Debug\WindowsProjeBase.csproj.GenerateResource.Cache
+C:\Users\Harun\Documents\Visual Studio 2015\Projects\Windows Programlama\WindowsProjeBase\obj\Debug\WindowsProjeBase.dll
+C:\Users\Harun\Documents\Visual Studio 2015\Projects\Windows Programlama\WindowsProjeBase\obj\Debug\WindowsProjeBase.pdb
+C:\Users\Harun\Documents\Visual Studio 2015\Projects\Windows Programlama\WindowsProjeBase\obj\Debug\WindowsProjeBase.SearchStatus.resources
