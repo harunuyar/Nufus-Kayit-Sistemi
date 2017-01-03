@@ -15,7 +15,10 @@ namespace WindowsProje
         public Vatandaş(ListViewItem item)
         {
             InitializeComponent();
-            if(item.SubItems[5].Text == "ERKEK")
+
+            this.Text = item.SubItems[1].Text + " " + item.SubItems[2].Text;
+
+            if (item.SubItems[5].Text == "ERKEK")
             {
                 pictureBox.Image = Properties.Resources.nufuscuzdanierkek;
             }

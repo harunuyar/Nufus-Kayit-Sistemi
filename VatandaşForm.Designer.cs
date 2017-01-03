@@ -37,7 +37,7 @@
             this.ClientSize = new System.Drawing.Size(725, 429);
             this.IsMdiContainer = true;
             this.Name = "VatandaşForm";
-            this.Text = "VatandaşForm";
+            this.Text = "Vatandaşlar";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.VatandaşForm_FormClosed);
             this.ResumeLayout(false);
 
