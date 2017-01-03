@@ -53,15 +53,6 @@
             this.columnSira = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.label3 = new System.Windows.Forms.Label();
             this.buttonAra = new System.Windows.Forms.Button();
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.dosyaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.oturumuKapatToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.çıkışToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.yardımToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.hakkındaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.yardımToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.buttonNKÖrneği = new System.Windows.Forms.Button();
-            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -76,7 +67,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(309, 39);
+            this.label2.Location = new System.Drawing.Point(353, 39);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(40, 13);
             this.label2.TabIndex = 1;
@@ -92,7 +83,7 @@
             // 
             // txtTc
             // 
-            this.txtTc.Location = new System.Drawing.Point(355, 36);
+            this.txtTc.Location = new System.Drawing.Point(399, 36);
             this.txtTc.Name = "txtTc";
             this.txtTc.Size = new System.Drawing.Size(100, 20);
             this.txtTc.TabIndex = 3;
@@ -132,7 +123,7 @@
             this.listView.Location = new System.Drawing.Point(12, 69);
             this.listView.Name = "listView";
             this.listView.RightToLeftLayout = true;
-            this.listView.Size = new System.Drawing.Size(626, 225);
+            this.listView.Size = new System.Drawing.Size(626, 218);
             this.listView.Sorting = System.Windows.Forms.SortOrder.Ascending;
             this.listView.TabIndex = 5;
             this.listView.UseCompatibleStateImageBehavior = false;
@@ -233,93 +224,20 @@
             // buttonAra
             // 
             this.buttonAra.Enabled = false;
-            this.buttonAra.Location = new System.Drawing.Point(461, 27);
+            this.buttonAra.Location = new System.Drawing.Point(543, 27);
             this.buttonAra.Name = "buttonAra";
-            this.buttonAra.Size = new System.Drawing.Size(66, 36);
+            this.buttonAra.Size = new System.Drawing.Size(95, 36);
             this.buttonAra.TabIndex = 7;
             this.buttonAra.Text = "Ara";
             this.buttonAra.UseVisualStyleBackColor = true;
             this.buttonAra.Click += new System.EventHandler(this.buttonAra_Click);
-            // 
-            // menuStrip1
-            // 
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.dosyaToolStripMenuItem,
-            this.yardımToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(650, 24);
-            this.menuStrip1.TabIndex = 8;
-            this.menuStrip1.Text = "menuStrip1";
-            // 
-            // dosyaToolStripMenuItem
-            // 
-            this.dosyaToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.oturumuKapatToolStripMenuItem,
-            this.çıkışToolStripMenuItem});
-            this.dosyaToolStripMenuItem.Name = "dosyaToolStripMenuItem";
-            this.dosyaToolStripMenuItem.Size = new System.Drawing.Size(51, 20);
-            this.dosyaToolStripMenuItem.Text = "Dosya";
-            // 
-            // oturumuKapatToolStripMenuItem
-            // 
-            this.oturumuKapatToolStripMenuItem.Name = "oturumuKapatToolStripMenuItem";
-            this.oturumuKapatToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.L)));
-            this.oturumuKapatToolStripMenuItem.Size = new System.Drawing.Size(192, 22);
-            this.oturumuKapatToolStripMenuItem.Text = "Oturumu Kapat";
-            this.oturumuKapatToolStripMenuItem.Click += new System.EventHandler(this.oturumuKapatToolStripMenuItem_Click);
-            // 
-            // çıkışToolStripMenuItem
-            // 
-            this.çıkışToolStripMenuItem.Name = "çıkışToolStripMenuItem";
-            this.çıkışToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.F4)));
-            this.çıkışToolStripMenuItem.Size = new System.Drawing.Size(192, 22);
-            this.çıkışToolStripMenuItem.Text = "Çıkış";
-            this.çıkışToolStripMenuItem.Click += new System.EventHandler(this.çıkışToolStripMenuItem_Click);
-            // 
-            // yardımToolStripMenuItem
-            // 
-            this.yardımToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.hakkındaToolStripMenuItem,
-            this.yardımToolStripMenuItem1});
-            this.yardımToolStripMenuItem.Name = "yardımToolStripMenuItem";
-            this.yardımToolStripMenuItem.Size = new System.Drawing.Size(56, 20);
-            this.yardımToolStripMenuItem.Text = "Yardım";
-            // 
-            // hakkındaToolStripMenuItem
-            // 
-            this.hakkındaToolStripMenuItem.Name = "hakkındaToolStripMenuItem";
-            this.hakkındaToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.A)));
-            this.hakkındaToolStripMenuItem.Size = new System.Drawing.Size(162, 22);
-            this.hakkındaToolStripMenuItem.Text = "Hakkında";
-            this.hakkındaToolStripMenuItem.Click += new System.EventHandler(this.hakkındaToolStripMenuItem_Click);
-            // 
-            // yardımToolStripMenuItem1
-            // 
-            this.yardımToolStripMenuItem1.Name = "yardımToolStripMenuItem1";
-            this.yardımToolStripMenuItem1.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.H)));
-            this.yardımToolStripMenuItem1.Size = new System.Drawing.Size(162, 22);
-            this.yardımToolStripMenuItem1.Text = "Yardım";
-            this.yardımToolStripMenuItem1.Click += new System.EventHandler(this.yardımToolStripMenuItem1_Click);
-            // 
-            // buttonNKÖrneği
-            // 
-            this.buttonNKÖrneği.Location = new System.Drawing.Point(533, 27);
-            this.buttonNKÖrneği.Name = "buttonNKÖrneği";
-            this.buttonNKÖrneği.Size = new System.Drawing.Size(105, 36);
-            this.buttonNKÖrneği.TabIndex = 9;
-            this.buttonNKÖrneği.Text = "Nüfus Kayıt Örneği";
-            this.buttonNKÖrneği.UseVisualStyleBackColor = true;
-            this.buttonNKÖrneği.Click += new System.EventHandler(this.buttonNKÖrneği_Click);
             // 
             // KullanıcıPaneli
             // 
             this.AcceptButton = this.buttonAra;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(650, 306);
-            this.Controls.Add(this.buttonNKÖrneği);
-            this.Controls.Add(this.menuStrip1);
+            this.ClientSize = new System.Drawing.Size(650, 314);
             this.Controls.Add(this.buttonAra);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.listView);
@@ -332,9 +250,14 @@
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Kullanıcı Paneli";
-            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.kullanıcıPaneli_FormClosed);
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
+            this.Controls.SetChildIndex(this.label1, 0);
+            this.Controls.SetChildIndex(this.label2, 0);
+            this.Controls.SetChildIndex(this.txtAd, 0);
+            this.Controls.SetChildIndex(this.txtTc, 0);
+            this.Controls.SetChildIndex(this.txtSoyad, 0);
+            this.Controls.SetChildIndex(this.listView, 0);
+            this.Controls.SetChildIndex(this.label3, 0);
+            this.Controls.SetChildIndex(this.buttonAra, 0);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -367,13 +290,5 @@
         private System.Windows.Forms.ColumnHeader columnSira;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button buttonAra;
-        private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem dosyaToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem oturumuKapatToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem çıkışToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem yardımToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem hakkındaToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem yardımToolStripMenuItem1;
-        private System.Windows.Forms.Button buttonNKÖrneği;
     }
 }

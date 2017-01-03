@@ -11,9 +11,8 @@ using System.Windows.Forms;
 
 namespace WindowsProje
 {
-    public partial class AdminPaneli : Form
+    public partial class AdminPaneli : WindowsProjeBase.PanelBase
     {
-        private Form form;
 
         List<Control> vatandaşTextList;
 
@@ -21,18 +20,12 @@ namespace WindowsProje
                                         "medeniHali","dini","kanGrubu","koil","koilce","kokoy","cilt","aileSira","sira"};
         public static string[] kullanıcıColumns = {"id", "kullaniciAdi", "parola", "isAdmin"};
        
-        public AdminPaneli(Form form)
+        public AdminPaneli(Form form) : base(form)
         {
-            this.form = form;
             InitializeComponent();
             initVadandaşList();
             listViewPeople_SelectedIndexChanged(new object(), new EventArgs());
             userTexts_TextChanged(new object(), new EventArgs());
-        }
-
-        private void AdminPanel_FormClosed(object sender, FormClosedEventArgs e)
-        {
-            form.Show();
         }
 
         private bool IsNumeric(string text)
@@ -166,11 +159,14 @@ namespace WindowsProje
                 con.Text = "";
             }
             listViewPeople.Items.Clear();
+            setFoundRecords(0);
+            setProgressBarValue(0);
         }
         
 
         private void buttonAra_Click(object sender, EventArgs e)
         {
+            setProgressBarValue(0);
             if (t1.Text != "" && (t1.Text.Length != 11 || !IsNumeric(t1.Text)))
             {
                 MessageBox.Show("TC Kimlik Numarasını Yanlış Girdiniz.", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -193,11 +189,20 @@ namespace WindowsProje
                 MessageBox.Show("Bütün girişler boş!", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
-            
+
+            setProgressBarValue(40);
+
             if (MySQLHelper.select("Citizen", colList, valList, listViewPeople).Items.Count == 0)
             {
+                setProgressBarValue(0);
                 MessageBox.Show("Kayıt bulunamadı!", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+            else
+            {
+                setProgressBarValue(100);
+            }
+
+            setFoundRecords(listViewPeople.Items.Count);
         }
 
         private void buttonEkle_Click(object sender, EventArgs e)
@@ -279,10 +284,18 @@ namespace WindowsProje
 
         private void buttonTümünüListele1_Click(object sender, EventArgs e)
         {
+            setProgressBarValue(0);
+            setProgressBarValue(40);
             if (MySQLHelper.select("select * from Citizen", listViewPeople).Items.Count == 0)
             {
+                setProgressBarValue(0);
                 MessageBox.Show("Kayıt bulunamadı", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+            else
+            {
+                setProgressBarValue(100);
+            }
+            setFoundRecords(listViewPeople.Items.Count);
         }
 
         private string adBul(string TC)
@@ -359,12 +372,16 @@ namespace WindowsProje
             tPass.Text = "";
             checkBoxAdmin.Checked = false;
             listViewKullanicilar.Items.Clear();
+
+            setFoundRecords(0);
+            setProgressBarValue(0);
         }
 
         private void buttonAra2_Click(object sender, EventArgs e)
         {
             string komutString;
 
+            setProgressBarValue(0);
             if (tId.Text != "")
             {
                 if (!IsNumeric(tId.Text))
@@ -383,10 +400,17 @@ namespace WindowsProje
                 return;
             }
 
+            setProgressBarValue(40);
             if (MySQLHelper.select(komutString, listViewKullanicilar).Items.Count == 0)
             {
                 MessageBox.Show("Kayıt bulunamadı", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                setProgressBarValue(0);
             }
+            else
+            {
+                setProgressBarValue(100);
+            }
+            setFoundRecords(listViewKullanicilar.Items.Count);
         }
 
         private void buttonEkle2_Click(object sender, EventArgs e)
@@ -465,36 +489,19 @@ namespace WindowsProje
 
         private void buttonTümünüListele2_Click(object sender, EventArgs e)
         {
+            setProgressBarValue(0);
+            setProgressBarValue(40);
+
             if (MySQLHelper.select("select * from User", listViewKullanicilar).Items.Count == 0)
             {
                 MessageBox.Show("Kayıt bulunamadı", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                setProgressBarValue(0);
             }
-        }
-
-
-
-        // Menu Strip
-
-        private void oturumuKapatToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            if (MessageBox.Show("Oturumunuzu kapatmak istiyor musunuz?", "Oturumu Kapat", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
-                this.Close();
-        }
-
-        private void çıkışToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            if (MessageBox.Show("Programı kapatmak istiyor musunuz?","Çıkış",MessageBoxButtons.YesNo,MessageBoxIcon.Question) == DialogResult.Yes)
-                Application.Exit();
-        }
-
-        private void hakkındaToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Giriş.hakkında();
-        }
-
-        private void yardımToolStripMenuItem1_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show("Bilgiler...\n...\n...\n...","Yardım");
+            else
+            {
+                setProgressBarValue(100);
+            }
+            setFoundRecords(listViewKullanicilar.Items.Count);
         }
     }
 }

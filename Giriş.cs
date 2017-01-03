@@ -13,7 +13,7 @@ namespace WindowsProje
 {
     public partial class Giriş : Form
     {
-        public static string connectionString = "server=harunuyar.net;user id=harun;password=658898;persistsecurityinfo=True;database=harundb";
+        public static string connectionString = "server=harunuyar.com;user id=harun;password=658898;persistsecurityinfo=True;database=harundb";
 
         public Giriş()
         {
@@ -84,11 +84,5 @@ namespace WindowsProje
         {
             txtHata.Visible = false;
         }
-
-        public static void hakkında()
-        {
-            MessageBox.Show("Hakkında", "Hakkında");
-        }
-       
     }
 }
