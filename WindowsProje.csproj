@@ -52,47 +52,47 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Forms\AdminPaneli.cs">
+    <Compile Include="AdminPaneli.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\AdminPaneli.Designer.cs">
+    <Compile Include="AdminPaneli.Designer.cs">
       <DependentUpon>AdminPaneli.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Giriş.cs">
+    <Compile Include="Giriş.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Giriş.Designer.cs">
+    <Compile Include="Giriş.Designer.cs">
       <DependentUpon>Giriş.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\KullanıcıPaneli.cs">
+    <Compile Include="KullanıcıPaneli.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\KullanıcıPaneli.Designer.cs">
+    <Compile Include="KullanıcıPaneli.Designer.cs">
       <DependentUpon>KullanıcıPaneli.cs</DependentUpon>
     </Compile>
     <Compile Include="MySQLHelper.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="MSSQLHelper.cs" />
-    <Compile Include="Forms\Vatandaş.cs">
+    <Compile Include="Vatandaş.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Vatandaş.Designer.cs">
+    <Compile Include="Vatandaş.Designer.cs">
       <DependentUpon>Vatandaş.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\VatandaşForm.cs">
+    <Compile Include="VatandaşForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\VatandaşForm.Designer.cs">
+    <Compile Include="VatandaşForm.Designer.cs">
       <DependentUpon>VatandaşForm.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Forms\AdminPaneli.resx">
+    <EmbeddedResource Include="AdminPaneli.resx">
       <DependentUpon>AdminPaneli.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Giriş.resx">
+    <EmbeddedResource Include="Giriş.resx">
       <DependentUpon>Giriş.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\KullanıcıPaneli.resx">
+    <EmbeddedResource Include="KullanıcıPaneli.resx">
       <DependentUpon>KullanıcıPaneli.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -105,10 +105,10 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="Forms\Vatandaş.resx">
+    <EmbeddedResource Include="Vatandaş.resx">
       <DependentUpon>Vatandaş.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\VatandaşForm.resx">
+    <EmbeddedResource Include="VatandaşForm.resx">
       <DependentUpon>VatandaşForm.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
@@ -128,13 +128,13 @@
     <None Include="harita.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="img\turkbayrak.png" />
+    <None Include="turkbayrak.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="img\nufuscuzdanierkek.png" />
+    <None Include="nufuscuzdanierkek.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="img\nufuscuzdanikadin.png" />
+    <None Include="nufuscuzdanikadin.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
