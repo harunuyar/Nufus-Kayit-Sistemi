@@ -73,3 +73,20 @@ C:\Users\Harun\Documents\Visual Studio 2015\Projects\Windows Programlama\obj\Deb
 C:\Users\Harun\Documents\Visual Studio 2015\Projects\Windows Programlama\bin\Debug\WindowsProjeBase.dll
 C:\Users\Harun\Documents\Visual Studio 2015\Projects\Windows Programlama\obj\Debug\WindowsProje.VatandaşForm.resources
 C:\Users\Harun\Documents\Visual Studio 2015\Projects\Windows Programlama\obj\Debug\WindowsProje.Vatandaş.resources
+C:\Projeler\Windows-Programlama\bin\Debug\WindowsProje.exe.config
+C:\Projeler\Windows-Programlama\obj\Debug\WindowsProje.exe
+C:\Projeler\Windows-Programlama\obj\Debug\WindowsProje.pdb
+C:\Projeler\Windows-Programlama\bin\Debug\WindowsProje.exe
+C:\Projeler\Windows-Programlama\bin\Debug\WindowsProje.pdb
+C:\Projeler\Windows-Programlama\bin\Debug\MySql.Data.dll
+C:\Projeler\Windows-Programlama\bin\Debug\WindowsProjeBase.dll
+C:\Projeler\Windows-Programlama\bin\Debug\MySql.Data.xml
+C:\Projeler\Windows-Programlama\bin\Debug\WindowsProjeBase.pdb
+C:\Projeler\Windows-Programlama\obj\Debug\WindowsProje.csprojResolveAssemblyReference.cache
+C:\Projeler\Windows-Programlama\obj\Debug\WindowsProje.AdminPaneli.resources
+C:\Projeler\Windows-Programlama\obj\Debug\WindowsProje.Giriş.resources
+C:\Projeler\Windows-Programlama\obj\Debug\WindowsProje.KullanıcıPaneli.resources
+C:\Projeler\Windows-Programlama\obj\Debug\WindowsProje.Properties.Resources.resources
+C:\Projeler\Windows-Programlama\obj\Debug\WindowsProje.Vatandaş.resources
+C:\Projeler\Windows-Programlama\obj\Debug\WindowsProje.VatandaşForm.resources
+C:\Projeler\Windows-Programlama\obj\Debug\WindowsProje.csproj.GenerateResource.Cache
